@@ -1,0 +1,24 @@
+{
+  "name": "responsive-sort-visualiser",
+  "version": "1.0.0",
+  "description": "This project is a Web Visualization tool for sorting algorithms.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aps-project1234/Responsive-sort-visualiser.git"
+  },
+  "author": "group project",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aps-project1234/Responsive-sort-visualiser/issues"
+  },
+  "homepage": "https://github.com/Aps-project1234/Responsive-sort-visualiser#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "path": "^0.12.7"
+  }
+}
