@@ -11,6 +11,7 @@
 
 * {
   box-sizing: border-box;
+  border-radius: 9px;
 }
 
 .row::after {
@@ -18,6 +19,10 @@
   clear: both;
   display: table;
 }
+
+/* .column {
+  display: block;
+} */
 
 [class*="col-"] {
   float: left;
@@ -46,12 +51,18 @@ html {
   color: #ffffff;
 }
 
+.header p:hover {
+  color: black;
+}
+
 .menu {
   background-color: #9933ff;
+  margin-top: 10px;
 }
 
 .menu button {
   padding: 8px;
+  color: white;
   margin: 7px;
   background-color: #9933ff;
   transition-duration: 0.4s;
@@ -66,15 +77,18 @@ html {
   transition-duration: 0.4s;
   border-radius: 12px;
   border: 1px solid lightblue;
+  color: white;
 }
 
 .menu button:hover {
   background-color: red;
+  color: black;
   box-shadow: 0 2px 6px rgba(0,0,0,0.52), 0 2px 6px rgba(0,0,0,0.84);
 }
 
 .aside button:hover {
   background-color: red;
+  color: black;
   box-shadow: 0 2px 6px rgba(0,0,0,0.52), 0 2px 6px rgba(0,0,0,0.84);
 }
 
@@ -90,7 +104,7 @@ html {
 .aside {
   background-color: #33b5e5;
   padding: 15px;
-  color: #ffffff;
+  color: black;
   text-align: center;
   font-size: 14px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -117,12 +131,20 @@ html {
   height: 70vh;
 }
 
+/* newly added */
+/* #cppcode {
+  border-style: solid;
+  border-color: red;
+  height: 800px;
+  margin-bottom: 10px;
+}  */
+
   /* For mobile phones: */
 [class*="col-"] {
   width: 100%;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
   /* For tablets: */
   .col-s-1 {width: 8.33%;}
   .col-s-2 {width: 16.66%;}
@@ -137,7 +159,7 @@ html {
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
   /* For desktop: */
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
