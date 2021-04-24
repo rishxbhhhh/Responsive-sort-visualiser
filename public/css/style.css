@@ -6,8 +6,8 @@
   font-weight: bold;
   text-transform: uppercase;
   margin: 0;
-  border-style: solid;
-  border-color: red;
+  /* border-style: solid;
+  border-color: red; */
 }
 
 * {
