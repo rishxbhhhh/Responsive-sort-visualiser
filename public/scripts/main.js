@@ -48,6 +48,11 @@ for (var i = 0; i < butts_algos.length; i++) {
 }
 
 function disable_buttons() {
+    try{
+        document.getElementById("timestamp").remove();
+    }
+    catch{
+    }
     for (var i = 0; i < butts_algos.length; i++) {
         butts_algos[i].classList = [];
         butts_algos[i].classList.add("butt_locked");

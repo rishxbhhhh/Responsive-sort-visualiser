@@ -36,6 +36,8 @@ function div_update(cont, height, color) {
     }, c_delay += delay_time);
 }
 
+let time = 0;
+
 function enable_buttons() {
     window.setTimeout(function () {
         for (var i = 0; i < butts_algos.length; i++) {
@@ -47,10 +49,11 @@ function enable_buttons() {
             inp_gen.disabled = false;
             inp_aspeed.disabled = false;
         }
-        const time = window.performance.now();
+        time = window.performance.now() - time;
         const time_div = document.createElement("p");
-        time_div.textContent = (time.toPrecision(4)/1000);
+        time_div.textContent = (time.toPrecision(4) / 1000);
         time_div.textContent += " sec"
+        time_div.id = "timestamp"
         document.querySelector("#time-stamp").append(time_div);
     }, c_delay += delay_time);
 
