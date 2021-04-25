@@ -88,13 +88,26 @@ html {
 .header {
   background-color: #9933aa;
   color: #ffffff;
-  border-radius: 12px;
+  border-radius: 15px;
+  margin: 10px;
 }
 
 .menu {
   background-color: #9933ff;
-  border-radius: 12px;
+  border-radius: 15px;
+  margin: 10px;
   margin-top: 10px;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 15px;
+  margin: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .menu button {
@@ -134,14 +147,6 @@ html {
   border-radius: 30px;
 }
 
-.aside {
-  background-color: #33b5e5;
-  padding: 15px;
-  color: #ffffff;
-  text-align: center;
-  font-size: 14px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
 
 #array-container {
   border-color: crimson;
