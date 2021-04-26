@@ -158,6 +158,12 @@ html {
   padding: 15px;
 }
 
+.footer h4 {
+  font-family: "Lucida Sans";
+  font-weight: bold;
+  color: blueviolet;
+}
+
 #array_container {
   display: -webkit-box;
   display: -ms-flexbox;
