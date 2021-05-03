@@ -34,9 +34,9 @@ void display(string name, int X[], int n)
          << "After " << name << " sort -->";
     for (int t = 0; t < n; t++)
     {
-        if (t % 25 == 0)
+        if (t % 10 == 0)
             cout << endl;
-        cout << X[t] << "  ";
+        cout << setw(10) << setfill(' ') << X[t] << "  ";
     }
     cout << endl;
 }
@@ -291,27 +291,27 @@ int main()
     stop[0] = steady_clock::now();
 
     start[1] = steady_clock::now();
-    bubblesort(a, n);
+    bubblesort(b, n);
     stop[1] = steady_clock::now();
 
     start[2] = steady_clock::now();
-    insertionsort(a, n);
+    insertionsort(c, n);
     stop[2] = steady_clock::now();
 
     start[3] = steady_clock::now();
-    quicksort(a, 0, n - 1);
+    quicksort(d, 0, n - 1);
     stop[3] = steady_clock::now();
 
     start[4] = steady_clock::now();
-    mergesort(a, 0, n - 1);
+    mergesort(e, 0, n - 1);
     stop[4] = steady_clock::now();
 
     start[5] = steady_clock::now();
-    radixsort(a, n);
+    radixsort(f, n);
     stop[5] = steady_clock::now();
 
     start[6] = steady_clock::now();
-    countsort(a, n);
+    countsort(g, n);
     stop[6] = steady_clock::now();
 
     auto duration1 = duration_cast<microseconds>(stop[0] - start[0]);
@@ -322,6 +322,7 @@ int main()
     auto duration6 = duration_cast<microseconds>(stop[5] - start[5]);
     auto duration7 = duration_cast<microseconds>(stop[6] - start[6]);
 
+    //display(" ", c, n);
     cout << endl
          << endl
          << "Selection Sort "
@@ -339,7 +340,6 @@ int main()
          << "Count Sort     "
          << "Duration_> " << setw(10) << setfill(' ') << duration7.count() << " micro s" << endl;
 
-    //display(" ", a, n);
-    system("pause");
+    //system("pause");
     return 0;
 }
